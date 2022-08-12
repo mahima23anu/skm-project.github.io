@@ -109,7 +109,7 @@ ul {
 /* section start */
 section {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -291,6 +291,10 @@ footer ul li a:hover
     .section-inner-center h3 {
         font-size: 75px;
     }
+    .section
+    {
+        height: 95vh;
+    }
 }
 @media (max-width:600px) {
     .desktop-main-menu
@@ -341,5 +345,9 @@ footer ul li a:hover
     #lost
     {
         font-size: 30px;
+    }
+    .section
+    {
+        height: 95vh;
     }
 }
