@@ -109,7 +109,7 @@ ul {
 /* section start */
 section {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,6 +288,9 @@ footer ul li a:hover
     {
         display: none;
     }
+    .section-inner-center h3 {
+        font-size: 75px;
+    }
 }
 @media (max-width:600px) {
     .desktop-main-menu
@@ -301,5 +304,42 @@ footer ul li a:hover
     .logo
     {
         margin: auto;
+        width: 150px;
+    }
+    .main-header
+    {
+        padding: 0;
+    }
+    .section-inner {
+        bottom: 75px;
+        left: 20px;
+      }
+    
+      .section-inner h2 {
+        font-size: 40px;
+    }
+    
+     footer ul li:first-child {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+      footer ul li {
+        margin-right: 15px;
+    }
+    
+      .logo {
+        width: 150px;
+        margin: auto;
+    }
+    
+      .section-inner-center h3 {
+        font-size: 50px;
+    }
+    #lost
+    {
+        font-size: 30px;
     }
 }
