@@ -52,6 +52,7 @@ ul {
     text-transform: uppercase;
     height: 100px;
     padding: 0 30px;
+    transition: 0.2s;
 }
 
 
