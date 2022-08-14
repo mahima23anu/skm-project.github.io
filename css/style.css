@@ -52,7 +52,7 @@ ul {
     text-transform: uppercase;
     height: 100px;
     padding: 0 30px;
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -299,6 +299,10 @@ footer ul li a:hover
     {
         height: 95vh;
     }
+    .main-header
+    {
+        height: 60px;
+    }
 }
 @media (max-width:600px) {
     .desktop-main-menu
@@ -321,13 +325,31 @@ footer ul li a:hover
     .section-inner {
         bottom: 75px;
         left: 20px;
-      }
-    
-      .section-inner h2 {
-        font-size: 40px;
     }
     
-     footer ul li:first-child {
+    .section-inner h2 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    .section-inner h4
+    {
+        margin-bottom: 0;
+    }
+
+    .section-d {
+        background-position-x: -550px;
+    }
+    .section-b {
+        background-position-x: -200px;
+    }
+
+    .section-a
+    {
+        background-position-x: -440px;
+    }
+    
+    footer ul li:first-child {
         position: absolute;
         top: 30px;
         left: 50%;
