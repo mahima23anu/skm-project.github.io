@@ -303,6 +303,19 @@ footer ul li a:hover
     {
         height: 60px;
     }
+    .hamburger
+    {
+    position: fixed;
+    top: 24px;
+    right: 20px;
+    z-index: 12;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    }
+    
 }
 @media (max-width:600px) {
     .desktop-main-menu
@@ -349,6 +362,7 @@ footer ul li a:hover
         background-position-x: -440px;
     }
     
+
     footer ul li:first-child {
         position: absolute;
         top: 30px;
@@ -377,3 +391,43 @@ footer ul li a:hover
         height: 95vh;
     }
 }
+
+/* hamburger */
+.hamburger
+{
+    position: fixed;
+    top: 44px;
+    right: 20px;
+    z-index: 12;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom
+{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+}
+
+.hamburger-middle
+{
+    transform: translateY(5px);
+}
+.hamburger-bottom
+{
+    transform: translateY(10px);
+}
+
+
+
+
+

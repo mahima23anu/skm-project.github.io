@@ -24,3 +24,15 @@ window.onscroll = function() {
   }  
   prevScrollpos = currentScrollPos;
 }
+
+window.onresize = function(){
+  // console.log(window.innerWidth);
+  if((window.innerWidth)<=960)
+  {
+    document.getElementById("menu-btn").style.top="24px";
+  }
+  else
+  {
+    document.getElementById("menu-btn").style.top="44px";
+  }
+}
