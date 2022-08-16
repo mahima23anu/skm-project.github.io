@@ -36,3 +36,12 @@ window.onresize = function(){
     document.getElementById("menu-btn").style.top="44px";
   }
 }
+
+// FOR OPENING THE HAMBURGER
+const openbtn=document.getElementById("menu-btn");
+openbtn.addEventListener('click',navToggle)
+
+function navToggle()
+{
+  openbtn.classList.toggle("open");
+}

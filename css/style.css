@@ -397,13 +397,14 @@ footer ul li a:hover
 {
     position: fixed;
     top: 44px;
-    right: 20px;
+    right: 25px;
     z-index: 12;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background: none;
     border: none;
+    transition: all 0.5s;
 }
 
 .hamburger-top,
@@ -411,8 +412,8 @@ footer ul li a:hover
 .hamburger-bottom
 {
     position: absolute;
-    width: 20px;
-    height: 2px;
+    width: inherit;
+    height: 1px;
     top: 0px;
     left: 0px;
     background: #fff;
@@ -420,11 +421,11 @@ footer ul li a:hover
 
 .hamburger-middle
 {
-    transform: translateY(5px);
+    transform: translateY(7px);
 }
 .hamburger-bottom
 {
-    transform: translateY(10px);
+    transform: translateY(14px);
 }
 
 /* hamburger open X function */
@@ -436,16 +437,20 @@ footer ul li a:hover
 .open .hamburger-middle
 {
     display: none;
+    transition: all 1s;
 }
 
 .open .hamburger-top
 {
-    transform: rotate(45deg) translate(0,5px);
+    transform: rotate(45deg) translateX(3px);
+    transform-origin: left;
 }
 .open .hamburger-bottom
 {
-    transform: rotate(-45deg) translate(-5px,0);
-}
+    transform-origin: right;
+    transform: rotate(-45deg) translateX(-3px);
+    
+} 
 
 
 
