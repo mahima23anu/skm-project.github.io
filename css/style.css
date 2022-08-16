@@ -431,24 +431,28 @@ footer ul li a:hover
 /* hamburger open X function */
 .open
 {
-    transform: rotate(90deg);
+    transform: rotate(90deg) scale(1.5);
+    transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .open .hamburger-middle
 {
-    display: none;
-    transition: all 1s;
+    /* display: none; */
+    opacity: 0;
+    transition:opacity .3s ease-in-out;
 }
 
 .open .hamburger-top
 {
     transform: rotate(45deg) translateX(3px);
     transform-origin: left;
+
 }
 .open .hamburger-bottom
 {
     transform-origin: right;
     transform: rotate(-45deg) translateX(-3px);
+    
     
 } 
 
