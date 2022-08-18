@@ -26,7 +26,7 @@ window.onscroll = function() {
 }
 
 window.onresize = function(){
-  // console.log(window.innerWidth);
+//   // console.log(window.innerWidth);
   if((window.innerWidth)<=960)
   {
     document.getElementById("menu-btn").style.top="24px";
@@ -37,11 +37,22 @@ window.onresize = function(){
   }
 }
 
+if((window.innerWidth)<=960)
+{
+  document.getElementById("menu-btn").style.top="24px";
+}
+else
+{
+  document.getElementById("menu-btn").style.top="44px";
+}
+
 // FOR OPENING THE HAMBURGER
 const openbtn=document.getElementById("menu-btn");
+const overlay=document.getElementById("overlay");
 openbtn.addEventListener('click',navToggle)
 
 function navToggle()
 {
   openbtn.classList.toggle("open");
+  overlay.classList.toggle("overlay-show");
 }
