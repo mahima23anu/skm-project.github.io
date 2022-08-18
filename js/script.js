@@ -49,6 +49,7 @@ else
 // FOR OPENING THE HAMBURGER
 const openbtn=document.getElementById("menu-btn");
 const overlay=document.getElementById("overlay");
+const Xmenu = document.getElementById("mobile-menu");
 openbtn.addEventListener('click',navToggle)
 
 function navToggle()
@@ -56,4 +57,5 @@ function navToggle()
   openbtn.classList.toggle("open");
   overlay.classList.toggle("overlay-show");
   document.body.classList.toggle("stop-scrolling");
+  Xmenu.classList.toggle("show-menu");
 }

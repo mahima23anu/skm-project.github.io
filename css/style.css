@@ -20,9 +20,7 @@ body::-webkit-scrollbar {
 }
  */
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
     background-color: antiquewhite; 
-    border-radius: 25%;
 } 
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -271,6 +269,56 @@ footer ul li a:hover
     }
 }
 
+/* hide mobile main menu items */
+.mobile-only
+{
+    display: none;
+}
+
+.mobile-main-menu
+{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 350px;
+    height: 100%;
+    z-index: 7;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.mobile-main-menu ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
+}
+
+.mobile-main-menu ul li
+{
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: rgb(139, 136, 136) 1px ;
+    border-bottom-style: groove;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 8px;
+}
+
+/* show menu at btn X click */
+.show-menu
+{
+    transform: translateX(0%);
+}
+
 /* media query */
 @media (min-width:961px) and (max-width:1002px) {
     .logo
@@ -283,7 +331,24 @@ footer ul li a:hover
     }
 }
 
+.mobile-main-menu ul li a
+{
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.mobile-main-menu ul li a:hover
+{
+    color: #aaa;
+}
+
+
 @media (max-width:960px) {
+    .mobile-only
+    {
+        display: block;
+    }
+
     .desktop-main-menu
     {
         display: none;
@@ -315,9 +380,49 @@ footer ul li a:hover
     background: none;
     border: none;
     }
+
+    .mobile-main-menu ul li {
+        margin-bottom: 12px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-bottom: rgb(139, 136, 136) 1px;
+        border-bottom-style: groove;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 5px;
+    }
+
+    .mobile-main-menu ul {
+        pad: 30px;
+    }
     
 }
 @media (max-width:600px) {
+    .mobile-main-menu ul li {
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        border-bottom: rgb(139, 136, 136) 1px;
+        border-bottom-style: groove;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 5px;
+    }
+    .mobile-main-menu
+    {
+        width: 290px;
+    }
+    .mobile-main-menu ul
+    {
+        padding: 20px;
+        padding-top: 60px;
+    }
+
+    .mobile-only
+    {
+        display: block;
+    }
+
     .desktop-main-menu
     {
         display: none;
@@ -407,6 +512,10 @@ footer ul li a:hover
 {
     overflow: hidden;
 }
+
+
+
+
 
 /* hamburger */
 .hamburger
