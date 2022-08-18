@@ -64,6 +64,7 @@ ul {
     display: block;
     width: 100%;
     height: auto;
+    z-index: 20;
 }
 
 
@@ -455,7 +456,7 @@ footer ul li a:hover
         margin-bottom: 0;
     }
 
-    .section-d {
+    /* .section-d {
         background-position-x: -550px;
     }
     .section-b {
@@ -465,7 +466,7 @@ footer ul li a:hover
     .section-a
     {
         background-position-x: -440px;
-    }
+    } */
     
 
     footer ul li:first-child {
