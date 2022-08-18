@@ -403,7 +403,10 @@ footer ul li a:hover
     z-index: 5;
 }
 
-
+.stop-scrolling
+{
+    overflow: hidden;
+}
 
 /* hamburger */
 .hamburger

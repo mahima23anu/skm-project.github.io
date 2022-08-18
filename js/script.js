@@ -54,5 +54,6 @@ openbtn.addEventListener('click',navToggle)
 function navToggle()
 {
   openbtn.classList.toggle("open");
-  overlay.classList.toggle("overlay-show");
+  overlay.classList.toggle("overlay-show");+
+  document.body.classList.toggle("stop-scrolling");
 }
