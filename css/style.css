@@ -585,7 +585,9 @@ footer ul li a:hover
     background-image: url(../img/falcon-9.webp);
 }
 
-
+.bg-falcon-heavy{
+    background-image: url(../img/falcon-heavy.webp);
+}
 .section-animate {
     animation: fadeIn 2s ease-in-out;
 }
@@ -614,6 +616,8 @@ footer ul li a:hover
   
   /* Stats */
 .stats {
+    padding-top: 75px;
+    padding-bottom: 75px;
     max-width: 960px;
     margin: 0 auto;
     display: flex;
@@ -624,12 +628,13 @@ footer ul li a:hover
 }
   
 .stats div span {
-    font-size: 160px;
+    font-size: 130px;
+    font-weight: 400;
 }
   
 .stats div h4 {
     font-size: 24px;
-    font-weight: 300;
+    font-weight:300;
 }
 
 @keyframes fadeIn {
