@@ -61,11 +61,18 @@ function navToggle()
 }
 
 
+
+const trans = document.getElementById("bg-img-f9-bp")
+
 const counters = document.querySelectorAll('.counter');
 let scrollStarted = false;
+
 document.addEventListener('scroll', scrollPage);
+
+
 function scrollPage() {
   const scrollPos = window.scrollY;
+  console.log(scrollPos);
 
   if (scrollPos > 100 && !scrollStarted) {
     countUp();
@@ -74,6 +81,13 @@ function scrollPage() {
     reset();
     scrollStarted = false;
   }
+  if (scrollPos > 100 && !scrollStarted) {
+    parallex();
+    scrollStarted = true;
+  } else if (scrollPos < 100 && scrollStarted) {
+    scrollStarted = false;
+  }
+
 }
 
 function countUp() {
@@ -106,4 +120,9 @@ function countUp() {
 
 function reset() {
   counters.forEach((counter) => (counter.innerHTML = '0'));
+}
+
+function parallex(){
+    
+
 }
