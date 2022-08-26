@@ -711,7 +711,7 @@ footer ul li a:hover
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 90%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -723,6 +723,13 @@ footer ul li a:hover
     user-select: none;
   }
   
+  .prev{
+    margin-left: 20px;
+  }
+  .next
+  {
+    margin-right: 20px;
+  }
   /* Position the "next button" to the right */
   .next {
     right: 0;
