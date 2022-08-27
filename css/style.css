@@ -1050,13 +1050,8 @@ footer ul li a:hover
 
 
     .textual{
-<<<<<<< Updated upstream
-        width: 100%;
-        font-size: 20px;
-=======
         width: 80%;
         font-size: 16px;
->>>>>>> Stashed changes
         line-height: 180%;
     }
     .textual h3{
