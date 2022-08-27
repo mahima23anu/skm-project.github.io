@@ -282,6 +282,8 @@ footer ul li a:hover
 
 #bg-img-f9-bp{
     background-image: url(../img/F9-bp.webp);
+    transition: all;
+    animation-fill-mode: both;
     
 }
 
@@ -548,6 +550,8 @@ footer ul li a:hover
   .slider-section{
     overflow-x: hidden;
     overflow-y: hidden;
+    transition: all;
+    animation-fill-mode: both;
   }
 
   #background-video{
@@ -943,7 +947,7 @@ footer ul li a:hover
     .textual{
         width: 100%;
         font-size: 20px;
-        line-height: 10%;
+        line-height: 180%;
     }
     .textual h3{
         margin-top: -100px;
