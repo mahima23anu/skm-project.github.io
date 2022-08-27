@@ -25,9 +25,9 @@ window.onscroll = function() {
       document.getElementById("navbar").style.backgroundColor = "transparent";
     }
   } 
-  else if(currentScrollPos>115)
+  else if(currentScrollPos>70)
   {
-    var abc=(115-currentScrollPos);
+    var abc=(70-currentScrollPos);
 
     var opa=Math.abs(abc);
     opa=1/(opa);
