@@ -1,5 +1,5 @@
 var prevScrollpos = window.pageYOffset;
-var leftItem = document.getElementById('bg-img-f9-bp');
+var leftItem = document.getElementById('bg-img-p');
 var textual= document.getElementById('textual');
 var rightItem = document.getElementById('slider-section');
 
