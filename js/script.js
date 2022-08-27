@@ -95,7 +95,6 @@ function scrollPage() {
     scrollStarted = false;
   }
 
-
   if (scrollPos > 1040 && scrollPos<1810 && !parallax_start) {
     rightItem.style.opacity=0;
     parallax(scrollPos);
@@ -177,14 +176,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
-
-
-
-
 function parallax(scrollPos){
   
   window.addEventListener("scroll", function(){
     leftItem.style.transform = "translateY("+(scrollPos-1040)+"px)";
     textual.style.transform = "translateY(-"+(scrollPos-1040)+"px)";})
   }
+
