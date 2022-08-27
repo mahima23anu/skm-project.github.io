@@ -273,7 +273,14 @@ footer ul li a:hover
     background-image: url('../img/section-f.webp');
 }
 
+.f9-cov-img-1{
+    background-image: url(../img/f9-TO.webp);
+}
 
+.f9-payload{
+    background-image: url(../img/f9-cover-1.webp);
+    overflow: hidden;
+}
 
 
 
@@ -390,6 +397,12 @@ footer ul li a:hover
     background-size: cover;
 }
 
+
+.Take-Off{
+    background-image: url(../img/f9-cov-11.webp);
+}
+
+
 .slider-contents{
     width: 100%;
     height: 100%;
@@ -438,6 +451,9 @@ footer ul li a:hover
     overflow-x: hidden;
     overflow-y: hidden;
   }
+
+  
+
   
   /* Next & previous buttons */
   .prev, .next {
@@ -575,6 +591,16 @@ footer ul li a:hover
         cursor: pointer;
   }
 
+  #play-btn:hover {
+    animation-name: play-spin;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes play-spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
 
   @keyframes fade {
     from {opacity: .4}
@@ -842,25 +868,43 @@ footer ul li a:hover
         overflow: hidden;
       }
 
-
-
-    #f9-cov-img-1{
-        margin-left: -50%;
-        margin-top: -10%;
-        width: 200%;
-        transition: all;
+    #play-btn{
+        height: 5%;
+    }
+    
+    .f9-payload{
+        background-size: auto 70vh;
+        background-position-y: 2vh;
+        height: 145vh;
     }
 
+    .f9-payload div {
+        background-color: rgba(0, 0, 0,0);
+        overflow: visible;
+        max-height: fit-content;
+    }
 
+    .f9-payload h3{
+        padding-bottom: 10%;
+    }
+
+    .f9-payload table , span{
+        text-transform: none;
+    }
+
+    .f9-payload #lower-slider-text{
+        line-height: 160%;
+    }
+    
     .Slider-Text{
-        padding: 20px;
-        max-width: 80%;
-        margin-top: -10%;
-        background-color: rgba(0,0,0,0.6);
-        border-radius: 20px;
-        margin-left: 3.5%;
-        max-height: 95%;
-        overflow: auto;
+    padding: 20px;
+    max-width: 80%;
+    margin-top: -10%;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 20px;
+    margin-left: 3.5%;
+    max-height: 95%;
+    overflow: auto;
     }
     .Slider-Text table{
         padding: 10px;
@@ -1040,15 +1084,6 @@ footer ul li a:hover
         overflow: hidden;
       }
 
-
-
-   /* .f9-sec{
-        margin-left: -27%;
-        height: 100vh;
-        width: 80vh;
-        transition: all;
-        overflow: hidden;
-    } */
 
 
     .Slider-Text{
