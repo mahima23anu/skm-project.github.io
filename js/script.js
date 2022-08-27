@@ -1,5 +1,16 @@
 var prevScrollpos = window.pageYOffset;
+var leftItem = document.getElementById('bg-img-f9-bp');
+var textual= document.getElementById('textual');
+var rightItem = document.getElementById('slider-section');
+
 var animat =document.getElementById("navbar");
+
+
+
+
+
+
+
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -69,6 +80,8 @@ const trans = document.getElementById("bg-img-f9-bp")
 
 const counters = document.querySelectorAll('.counter');
 let scrollStarted = false;
+let parallax_start = false;
+
 
 document.addEventListener('scroll', scrollPage);
 
@@ -84,12 +97,22 @@ function scrollPage() {
     reset();
     scrollStarted = false;
   }
-  if (scrollPos > 100 && !scrollStarted) {
-    parallex();
-    scrollStarted = true;
-  } else if (scrollPos < 100 && scrollStarted) {
-    scrollStarted = false;
-  }
+
+
+  // if (scrollPos > 1040 && scrollPos<1810 && !parallax_start) {
+  //   rightItem.style.zIndex=-1;
+  //   leftItem.style.zIndex=1;
+  //   parallax(scrollPos);
+  //   scrollStarted = true;
+  // }if (scrollPos > 1800) {
+  //     parallax_start = true;
+  //     leftItem.style.zIndex=-1;
+  //     rightItem.style.zIndex=1;
+  // }
+
+  // if(scrollPos<1040){
+  //   parallax_start=false;
+  // }
 
 }
 
@@ -157,3 +180,13 @@ function showSlides(n) {
 }
 
 
+
+
+
+
+// function parallax(scrollPos){
+  
+//   window.addEventListener("scroll", function(){
+//     leftItem.style.transform = "translateY("+(scrollPos-1040)+"px)";
+//     textual.style.transform = "translateY(-"+(scrollPos-1040)+"px)";})
+//   }
