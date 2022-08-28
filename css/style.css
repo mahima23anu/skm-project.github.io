@@ -437,7 +437,6 @@ footer ul li a:hover
     line-height: 190%;
 }
 
-
   /* Stats */
 .stats {
     padding-top: 75px;
@@ -925,6 +924,7 @@ footer ul li a:hover
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    cursor: pointer;
 }
 .article-date
 {
