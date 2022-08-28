@@ -176,6 +176,42 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+
+
+// lower slider 
+
+
+let l_slideIndex = 1;
+l_showSlides(l_slideIndex);
+
+function l_plusSlides(n) {
+  l_showSlides(l_slideIndex += n);
+}
+
+function l_currentSlide(n) {
+  l_showSlides(l_slideIndex = n);
+}
+
+function l_showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("FH-SL");
+  let dots = document.getElementsByClassName("l_dot");
+  if (n > slides.length) {l_slideIndex = 1}    
+  if (n < 1) {l_slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[l_slideIndex-1].style.display = "block";  
+  dots[l_slideIndex-1].className += " active";
+}
+
+
+
+
 function parallax(scrollPos){
   
   window.addEventListener("scroll", function(){
