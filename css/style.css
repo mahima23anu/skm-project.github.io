@@ -437,9 +437,9 @@ footer ul li a:hover
     line-height: 190%;
 }
 
-#left-half{
+/* #left-half{
     
-}
+} */
 
 
   /* Stats */
@@ -540,7 +540,6 @@ footer ul li a:hover
         background-size: cover;
         overflow: hidden;
       }
-  }
 
 
   .f9-sec{
