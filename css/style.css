@@ -412,6 +412,23 @@ footer ul li a:hover
     animation: fadeInUp 0.5s ease-in-out 0.2s;
     animation-fill-mode: both;
 }
+
+
+
+.mySlides{
+    position: relative;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    bottom: 0;
+    overflow: hidden;
+}
+
+
+
+
   
 #Flex-box-2{
     padding: 5%;
@@ -497,20 +514,8 @@ footer ul li a:hover
     overflow: hidden;
 }
 
-
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
   
   /* Hide the images by default */
-  .mySlides {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: all;
-  }
 
   .f9-cov{
     display: flex;
@@ -583,12 +588,12 @@ footer ul li a:hover
   /* Caption text */
   .Slider-Text {
     top: 10%;
-    left: 7%;
+    left: 5%;
     color: #f2f2f2;
     font-size: 20px;
     padding: 10px;
     position: absolute;
-    width: 100%;
+    width: 35%;
     text-align: left;
     transition: all;
   }
@@ -604,7 +609,7 @@ footer ul li a:hover
   }
 
   .Slider-Text table{
-    width: 30%;
+    width: 100%;
     text-align: left;
     transition: all;
   }
@@ -701,6 +706,7 @@ footer ul li a:hover
   .fadeIn{
     animation-name: fadeIn;
     animation-duration: 1.5s;
+    animation-fill-mode: both;
   }
 
 
@@ -745,12 +751,6 @@ footer ul li a:hover
   }
   
 
-  .slider-section{
-    overflow-x: hidden;
-    overflow-y: hidden;
-    transition: all;
-    animation-fill-mode: both;
-  }
 
   #background-video{
     width: 101%;
@@ -761,6 +761,7 @@ footer ul li a:hover
     top: 0;
     bottom: 0;
     transition: all;
+    transform: translateX(-8px);
   }
 
   #lower-slider-text{
@@ -1047,6 +1048,7 @@ footer ul li a:hover
 
     .stats{
         flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .stats div{
@@ -1069,18 +1071,24 @@ footer ul li a:hover
     }
 
     .Slider-Text{
-        width: 100%;
+        width: 60%;
     }
 
     .Slider-Text table{
-        width: 85%;
+        width: 100%;
     }
 
     .mySlides{
-        margin-left: -60%;
-        width: 200%;
-        transition: all;
+        position: relative;
+        height: 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-transform: uppercase;
+        bottom: 0;
+
     }
+
 
     .FH-SL{
         margin-left: -60%;
@@ -1159,16 +1167,6 @@ footer ul li a:hover
         line-height: 160%;
     }
     
-    .Slider-Text{
-    padding: 20px;
-    max-width: 80%;
-    margin-top: -10%;
-    background-color: rgba(0,0,0,0.6);
-    border-radius: 20px;
-    margin-left: 3.5%;
-    max-height: 95%;
-    overflow: auto;
-    }
     .Slider-Text table{
         padding: 10px;
         width: 100%;
@@ -1230,6 +1228,11 @@ footer ul li a:hover
     .FH-SL{
         height: 98vh;
     }
+
+    .slideshow-container{
+        height: 90vh;
+    }
+
 
 }
 
@@ -1359,6 +1362,7 @@ footer ul li a:hover
 
 
     .textual{
+        margin-left: 10%;
         width: 80%;
         font-size: 16px;
         line-height: 180%;
@@ -1368,15 +1372,43 @@ footer ul li a:hover
         max-width: 100%;
     }
 
-    .Slider-Text table{
-        width: 85%;
+
+
+    .Slider-Inner-Content{
+        width: 500px;
+        position: relative;
+    } 
+
+
+    .slideshow-container{
+        height: 90vh;
     }
 
 
-    .mySlides{
-        margin-left: -120%;
-        width: 300%;
-    } 
+    #background-video{
+        width: 101%;
+        height: 100%;
+        object-fit: cover;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all;
+        transform: translateX(-8px);
+      }
+
+      .mySlides{
+        margin-left: -10vh;
+        position: relative;
+        height: 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-transform: uppercase;
+        bottom: 0;
+      }
+
+
+      
 
     .FH-SL{
         margin-left: -120%;
@@ -1416,19 +1448,13 @@ footer ul li a:hover
 
 
     .Slider-Text{
-        padding: 10px;
-        padding-top: 20px;
-        padding-bottom: 35px;
-        max-width: 90%;
-        margin-top: 120%;
-        /* background-color: rgba(0,0,0,0.6); */
-        border-radius: 20px;
-        max-height: 50%;
-        margin-left: -2%;
-        overflow: scroll;
-        line-height: 100%;
+        margin-left: 8vh;
+        margin-top: 10%;
+        width: 80%;
         font-size: 16px;
     }
+
+
     .Slider-Text table{
         padding: 10px;
         width: 100%;
@@ -1443,6 +1469,8 @@ footer ul li a:hover
         font-size: 30px;
     }
 
+
+
     #lower-slider-text{
         width: 100%;
         line-height: 100%;
@@ -1453,12 +1481,14 @@ footer ul li a:hover
     }
 
     #bg-img-p{
-        background-size: 350% 65%;
+        margin-top: 20vh;
+        margin-left: -10vh;
+        position: relative;
+        height: 100vh;
+        background-position: center center;
         background-repeat: no-repeat;
-        background-position-y: 41%;
-        background-position-x: 59%;
-        max-width: fit-content;
-        max-height: fit-content;
+        text-transform: uppercase;
+        bottom: 0;
 
     }
     .row-kplo-3{
