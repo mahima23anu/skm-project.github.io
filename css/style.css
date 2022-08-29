@@ -371,7 +371,62 @@ footer ul li a:hover
 .FH_c_8{
     background-image: url(../img/falcon-heavy/FH_C_8.webp);
 }
+/* launches.html css */
+.sec-lau-a
+{
+    background-image: url(../img/launches-img/launches-head1.webp);
+    animation: fadeIn 3s;
+}
 
+.sec-lau-a-inner
+{
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+.launch-content
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.item {
+    width: calc(50% - 10px);
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.background-launch 
+{
+    padding-top: 56.25%;
+    background-position: center center;
+    background-size: cover; 
+}
+
+.date
+{
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.label
+{
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 38px;
+    letter-spacing: 1.5px;
+    word-spacing: 7px;
+}
+
+#l-1{background-image: url(../img/launches-img/L-01.jpg);}
+#l-2{background-image: url(../img/launches-img/L-02.jpg);}
 
 .bg-img-f9-bp{
     background-image: url(../img/F9-bp.webp);
