@@ -562,6 +562,7 @@ footer ul li a:hover
 }
 
 .textual{
+    word-spacing: 2px;
     padding: 50px;
     padding-top: 268px;
     width: 50%;
@@ -574,7 +575,7 @@ footer ul li a:hover
     line-height:250%;
     transition: all;
     max-height: 90%;
-    overflow: auto;
+    overflow: hidden;
 }
 
 
@@ -653,10 +654,6 @@ footer ul li a:hover
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
   
   /* Caption text */
   .Slider-Text {
@@ -755,9 +752,11 @@ footer ul li a:hover
 
   .dot-div{
     margin-top: -60px;
-    width: 100%;
+    width: auto;
     position: absolute;
     text-align: center;
+    left: 50%;
+    transform: translate(-50%);
   }
   
   .active, .dot:hover {
@@ -1087,6 +1086,8 @@ footer ul li a:hover
 
 
 /* hamburger */
+
+
 .hamburger
 {
     position: fixed;

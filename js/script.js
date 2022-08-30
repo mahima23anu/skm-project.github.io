@@ -8,6 +8,7 @@ var leftItem = document.getElementById('bg-img-p');
 var textual= document.getElementById('textual');
 var rightItem = document.getElementById('slider-section');
 var animat =document.getElementById("navbar");
+var hm_bur =document.getElementById("menu-btn");
 
 
 
@@ -18,15 +19,24 @@ var animat =document.getElementById("navbar");
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-    document.getElementById("navbar").style.opacity = 1;
+
+
+    animat.style.top = "0";
+    hm_bur.style.top = "44px";
+
+
+    animat.style.opacity = 1;
+    hm_bur.style.opacity = 1;
+
     if(currentScrollPos>650)
     {
-      document.getElementById("navbar").style.backgroundColor = "#000";
+      animat.style.backgroundColor = "#000";
+      hm_bur.style.backgroundColor = "#000";
     }
     else
     {
-      document.getElementById("navbar").style.backgroundColor = "transparent";
+      animat.style.backgroundColor = "transparent";
+      hm_bur.style.backgroundColor = "transparent";
     }
   } 
   else if(currentScrollPos>70)
@@ -34,11 +44,18 @@ window.onscroll = function() {
     var abc=(70-currentScrollPos);
 
     var opa=Math.abs(abc);
+
     opa=1/(opa);
-    document.getElementById("navbar").style.opacity = opa;
+
+    animat.style.opacity = opa;
+    hm_bur.style.opacity = 0;
   }  
+
   prevScrollpos = currentScrollPos;
 }
+
+
+
 
 window.onresize = function(){
 //   // console.log(window.innerWidth);
@@ -51,6 +68,8 @@ window.onresize = function(){
     document.getElementById("menu-btn").style.top="44px";
   }
 }
+
+
 
 if((window.innerWidth)<=960)
 {
@@ -67,6 +86,8 @@ else
 const openbtn=document.getElementById("menu-btn");
 const overlay=document.getElementById("overlay");
 const Xmenu = document.getElementById("mobile-menu");
+
+
 openbtn.addEventListener('click',navToggle)
 
 function navToggle()
