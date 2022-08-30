@@ -237,6 +237,46 @@
     .slideshow-container{
         height: 90vh;
     }
+    /* launch */
+    .launch-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 30px;
+        flex-direction: column;
+    }
+    .item {
+        width: calc(90% - 10px);
+        gap: 10px;
+        margin-bottom: 100px;
+    }
+    .edit-stats div span
+    {
+        font-size: 100px;
+    }
+    .edit-stats div h4
+    {
+        font-size: 21px;
+    }
+    .edit-stats {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .date {
+        margin-top: 30px;
+    }
+    .label {
+        margin-top: 12px;
+        margin-bottom: 21px;
+    }
+    .item
+    {
+        margin-bottom: 70px;
+    }
+    .edit-btn
+    {
+        padding-left: 40%;
+        padding-right: 40%;
 
-
+    }
 }
