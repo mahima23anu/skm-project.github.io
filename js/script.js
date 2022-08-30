@@ -1,8 +1,12 @@
 var prevScrollpos = window.pageYOffset;
+let Wh = window.innerHeight;
+
+
+
+
 var leftItem = document.getElementById('bg-img-p');
 var textual= document.getElementById('textual');
 var rightItem = document.getElementById('slider-section');
-
 var animat =document.getElementById("navbar");
 
 
@@ -58,6 +62,8 @@ else
 }
 
 // FOR OPENING THE HAMBURGER
+
+
 const openbtn=document.getElementById("menu-btn");
 const overlay=document.getElementById("overlay");
 const Xmenu = document.getElementById("mobile-menu");
@@ -80,6 +86,7 @@ let scrollStarted = false;
 let parallax_start = false;
 
 
+
 document.addEventListener('scroll', scrollPage);
 
 
@@ -95,23 +102,52 @@ function scrollPage() {
     scrollStarted = false;
   }
 
-  if (scrollPos > 1040 && scrollPos<1810 && !parallax_start) {
+  function parallax(scrollPos){
+  
+    window.addEventListener("scroll", function(){
+      leftItem.style.transform = "translateY("+(scrollPos-Ss)+"px)";
+      textual.style.transform = "translateY(-"+(scrollPos-Ss)+"px)";})
+    }
+  
+  
+  function parallax2(scrollPos){
+    
+      window.addEventListener("scroll", function(){
+        rightItem.style.transform = "translateY("+(scrollPos-Se)+"px)";})
+  }
+
+  // parallax
+  let Se =  Wh*100/41;
+  let Ss = Wh*100/70;
+  let Pe = Wh*100/30;
+
+
+
+
+  if (scrollPos > Ss && scrollPos<Se+400) {
     rightItem.style.opacity=0;
     parallax(scrollPos);
     scrollStarted = true;
-  }if (scrollPos > 1800) {
-      parallax_start = true;
+  }if (scrollPos > Se) {
       leftItem.classList.add("fadeOut")
       rightItem.classList.add("fadeIn")
   }
+  if(scrollPos>Se && scrollPos <Pe){
+    parallax2(scrollPos);
+  }
 
-  if(scrollPos<1040){
+  if(scrollPos<Ss){
     leftItem.classList.remove("fadeOut")
     rightItem.classList.remove("fadeIn")
     parallax_start=false;
   }
 
+
+
 }
+
+
+
 
 function countUp() {
   counters.forEach((counter) => {
@@ -141,12 +177,25 @@ function countUp() {
   });
 }
 
+
+
 function reset() {
   counters.forEach((counter) => (counter.innerHTML = '0'));
 }
 
 
+
+
+
+
+
 // to  change slider ----------------------------------------------------------------------
+
+
+
+
+
+
 
 
 let slideIndex = 1;
@@ -179,7 +228,10 @@ function showSlides(n) {
 
 
 
-// lower slider 
+// lower slider ------------------------------------------------------------------
+
+
+
 
 
 let l_slideIndex = 1;
@@ -196,26 +248,15 @@ function l_currentSlide(n) {
 function l_showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("FH-SL");
-  let dots = document.getElementsByClassName("l_dot");
   if (n > slides.length) {l_slideIndex = 1}    
   if (n < 1) {l_slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[l_slideIndex-1].style.display = "block";  
-  dots[l_slideIndex-1].className += " active";
 }
 
 
 
 
-function parallax(scrollPos){
-  
-  window.addEventListener("scroll", function(){
-    leftItem.style.transform = "translateY("+(scrollPos-1040)+"px)";
-    textual.style.transform = "translateY(-"+(scrollPos-1040)+"px)";})
-  }
 
