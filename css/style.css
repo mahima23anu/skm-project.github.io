@@ -969,6 +969,10 @@ footer ul li a:hover
     justify-content: center;
     align-items: center;
 }
+.section-kplo,.section-kplo-1,.section-kplo-2
+{
+    animation: fadeIn 3s;
+}
 .row-kplo-1
 {
     width: 90%;
