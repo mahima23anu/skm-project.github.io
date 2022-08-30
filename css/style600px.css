@@ -172,10 +172,12 @@
     .FH-SL{
         margin-left: -120%;
         width: 300%;
+        height: 94vh;
+        overflow: hidden;
     }
 
     .lower_text{
-        bottom: -3rem;
+        font-size: 12px;
         width: 90%;
         overflow: visible;
         left: 10%;
@@ -189,9 +191,6 @@
         max-width: 90%;
     }
 
-    .FH-SL{
-        height: 94vh;
-    }
 
 
     .f9-cov{
@@ -207,10 +206,14 @@
 
 
     .Slider-Text{
-        margin-left: 8vh;
-        margin-top: 10%;
-        width: 80%;
+        padding-top: 10vh;
+        padding-bottom: 80vh;
+        padding-left: 12vh;
+        padding-right: 8vh;
+        width: 100%;
         font-size: 16px;
+        background-color: rgba(0, 0, 0, .5);
+        margin-top: -10vh;
     }
 
 
@@ -235,8 +238,16 @@
         line-height: 100%;
     }
 
-    .dot{
-        display: none;
+    .dot-div{
+        margin-top: 10px;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+    }
+
+
+    .prev, .next{
+        bottom: 20px;
     }
 
     #bg-img-p{
@@ -317,4 +328,20 @@
     {
         margin-bottom: 50px;
     }
+
+
+    #slider-section{
+        overflow: hidden;
+    }
+
+    #play-btn{
+        height: 40px;
+        width: 60px;
+    }
+
+    .f9-payload {
+        margin-top: -20px;
+        margin-left: -80px;
+    }
+
 }
