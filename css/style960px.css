@@ -1,0 +1,242 @@
+@media (max-width:960px) {
+    .mobile-only
+    {
+        display: block;
+    }
+
+    .desktop-main-menu
+    {
+        display: none;
+    }
+    .nav-right
+    {
+        display: none;
+    }
+    .section-inner-center h3 {
+        font-size: 75px;
+    }
+    .section
+    {
+        height: 95vh;
+    }
+    .main-header
+    {
+        height: 60px;
+    }
+    .hamburger
+    {
+    position: fixed;
+    top: 24px;
+    right: 20px;
+    z-index: 12;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    }
+
+    .mobile-main-menu ul li {
+        margin-bottom: 12px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-bottom: rgb(139, 136, 136) 1px;
+        border-bottom-style: groove;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 5px;
+    }
+
+    .mobile-main-menu ul {
+        pad: 30px;
+    }
+
+    .stats{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .stats div{
+        margin-bottom: 20px;
+    }
+
+    .textual{
+        width: 100%;
+        font-size: 20px;
+        transition: line-height 1s;
+        animation: both;
+    }
+    .textual h3{
+        margin-top: -100px;
+        max-width: 100%;
+    }
+
+    .Slider-Text{
+        margin-top: 20px;
+    }
+
+    .Slider-Text{
+        width: 60%;
+    }
+
+    .Slider-Text table{
+        width: 100%;
+    }
+
+    .mySlides{
+        position: relative;
+        height: 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-transform: uppercase;
+        bottom: 0;
+
+    }
+
+
+    .FH-SL{
+        margin-left: -60%;
+        width: 200%;
+        transition: all;
+    }
+
+    .f9-cov{
+        margin-left: -80%;
+        margin-top: -5%;
+        width: 250%;
+        height: 105%;
+        transition: all;
+        overflow-x: hidden;
+        overflow: hidden;
+      }
+
+      .fh_cov{
+        margin-left: -80%;
+        margin-top: -5%;
+        height: 105%;
+        transition: all;
+        overflow-x: hidden;
+        overflow: hidden;
+      }
+
+    #play-btn{
+        height: 5%;
+    }
+    
+    .f9-payload{
+        background-size: auto 70vh;
+        background-position-y: 2vh;
+        height: 100vh;
+    }
+
+    .fh_m{
+        background-size: auto 70vh;
+        background-position-y: 2vh;
+        height: 145vh;
+    }
+
+    .f9-payload div {
+        background-color: rgba(0, 0, 0,0);
+        overflow: visible;
+        max-height: fit-content;
+    }
+
+    .fh_m{
+        background-color: rgba(0, 0, 0,0);
+        overflow: visible;
+        max-height: fit-content;
+    }
+
+    .f9-payload h3{
+        padding-bottom: 10%;
+    }
+
+    .fh_m h3{
+        padding-bottom: 10%;
+    }
+
+    .f9-payload table , span{
+        text-transform: none;
+    }
+
+    .fh_m table , span{
+        text-transform: none;
+    }
+
+    .f9-payload #lower-slider-text{
+        line-height: 160%;
+    }
+
+    .fh_m #lower-slider-text{
+        line-height: 160%;
+    }
+    
+    .Slider-Text table{
+        padding: 10px;
+        width: 100%;
+    }
+
+    .Slider-Text p{
+        width: 90%;
+    }
+
+    #lower-slider-text{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #Flex-box-2{
+        flex-direction: column;
+        height: 130vh;
+        padding-bottom: 0%;
+    }
+
+    #right-half{
+        width: 90%;
+        margin-top: 0%;
+        padding: 5%;
+        flex-grow: 1;
+        flex-wrap: nowrap;
+        transition: all;
+
+    }
+
+    #right-half h3{
+        font-size: 30px;
+    }
+
+    #right-half p{
+        font-size: 15px;
+    }
+
+    #left-half{
+        margin: 0%;
+        width: 110%;
+    }
+
+    .lower_text{
+        padding-top: 30px;
+        bottom: -3rem;
+        width: 90%;
+        overflow: visible;
+        left: 10%;
+        right: 10%;
+    }
+
+    .lower_text p{
+        text-align: center;
+        justify-content: center;
+        max-width: 90%;
+    }
+
+    .FH-SL{
+        height: 98vh;
+    }
+
+    .slideshow-container{
+        height: 90vh;
+    }
+
+
+}
