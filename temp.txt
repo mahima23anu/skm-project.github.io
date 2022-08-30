@@ -1,0 +1,167 @@
+
+
+<section class="slider-section" id="slider-section" style="overflow: hidden;">
+  <div class="slideshow-container">
+
+      <div class="FH-SL fade">
+        <img src="./img/falcon-heavy/FH-LS1.webp" style="width:100%; height:100%">
+        
+          <div class="lower_text">
+            <p>
+              Falcon Heavy vertical at Kennedy Space Center
+            </p>
+            </div>
+        
+        
+      </div>
+      
+
+
+
+
+<!-- SECOND SLIDER PAGE  -->
+
+
+
+      <div class="FH-SL fade">
+        <img src="./img/falcon-heavy/FH-LS2.webp" style="width:100%; height:100%">
+        <div class="lower_text">
+          <p>
+            Falcon Heavy takes off from Pad 39A at Kennedy Space Center
+          </p>
+          </div>
+      </div>  
+      
+
+
+
+
+
+<!-- THIRD SLIDER PAGE -->
+
+
+
+      <div class="FH-SL fade">
+        <img src="./img/falcon-heavy/FH-LS3.webp" style="width:100%; height:100%">
+        <div class="lower_text">
+          <p>
+            Falcon Heavy carries Arabsat-6A to orbit
+          </p>
+          </div>
+      </div>
+
+
+
+
+
+
+<!-- FOURTH SLIDER PAGE -->
+
+
+
+
+                  
+      <div class="FH-SL fade">
+        <img src="./img/falcon-heavy/FH-LS4.webp" style="width:100%; height:100%">
+        <div class="lower_text">
+          <p>
+            Falcon Heavy's side boosters land at LZ-1 and LZ-2 at Cape Canaveral
+          </p>
+          </div>
+      </div>  
+
+
+
+
+
+
+<!-- fifth slider page -->
+
+
+
+
+
+
+    <div class="FH-SL fade">
+      <img src="./img/falcon-heavy/FH-LS5.webp" style="width:100%; height:100%">
+      <div class="lower_text">
+        <p>
+          Falcon Heavy lifts off from Pad 39A at Kennedy Space Center
+        </p>
+        </div>
+    </div>   
+
+
+<!-- 6th slider page -->
+
+    <div class="FH-SL fade">
+      <img src="./img/falcon-heavy/FH-LS6.webp" style="width:100%; height:100%">
+      <div class="lower_text">
+        <p>
+          Falcon Heavy lifts off from Pad 39A at Kennedy Space Center
+        </p>
+        </div>
+    </div>  
+
+
+<!-- 7th slider page -->
+
+    <div class="FH-SL fade">
+      <img src="./img/falcon-heavy/FH-LS7.webp" style="width:100%; height:100%">
+      <div class="lower_text">
+        <p>
+          All 27 Merlin engines lit on Falcon Heavy
+        </p>
+        </div>
+    </div>  
+
+
+<!-- 8th slider page -->
+
+    <div class="FH-SL fade">
+      <img src="./img/falcon-heavy/FH-LS8.webp" style="width:100%; height:100%">
+      <div class="lower_text">
+        <p>
+          Falcon Heavy lifts off from Pad 39A at Kennedy Space Center
+        </p>
+        </div>
+    </div>  
+ 
+      
+    </div>
+
+
+
+<!-- buttons  -->
+    
+      <br>
+      
+      <div>
+        <a class="prev" onclick="l_plusSlides(-1)">❮</a>
+        <a class="next" onclick="l_plusSlides(1)">❯</a>
+      </div>        
+</section>
+
+
+
+
+        
+          <br>
+          
+  </section>
+
+    <footer>
+        <ul>
+            <li>SpaceX &copy;</li>
+            <li><a href="https://twitter.com/spacex"  target="_blank">Twitter</a></li>
+            <li><a href="https://www.youtube.com/spacex" target="_blank">YouTube</a></li>
+            <li><a href="https://www.instagram.com/spacex/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.flickr.com/photos/spacex" target="_blank">Flickr</a></li>
+            <li><a href="https://www.linkedin.com/company/spacex" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.spacex.com/media/privacy_policy_spacex.pdf" target="_blank">Privacy</a></li>
+            <li><a href="#">Suppliers</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+<!-- satvik -->

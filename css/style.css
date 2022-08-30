@@ -9,6 +9,10 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     width: 3px;
     background-color: rgba(21, 28, 36, 0.301);
@@ -662,7 +666,7 @@ footer ul li a:hover
     font-size: 20px;
     padding: 10px;
     position: absolute;
-    width: 35%;
+    width: 40%;
     text-align: left;
     transition: all;
   }
@@ -728,8 +732,7 @@ footer ul li a:hover
 
 
   .lower_text{
-    padding-top: 30px;
-    bottom: -2rem;
+    padding-top: 10px;
     position: absolute;
     width: 100%;
     text-align: left;
@@ -751,6 +754,9 @@ footer ul li a:hover
   }
 
   .dot-div{
+    margin-top: -60px;
+    width: 100%;
+    position: absolute;
     text-align: center;
   }
   
@@ -785,9 +791,9 @@ footer ul li a:hover
         color: #000;
         position: absolute;
         top: 50%;
-        left: 49%;
-        width: 10%;
-        height: 10%;
+        left: 50%;
+        width: 4%;
+        height: 4%;
         overflow: hidden;
         cursor: pointer;
   }
@@ -835,10 +841,10 @@ footer ul li a:hover
 
   #lower-slider-text{
     text-transform: none;
-    width: 30%;
+    width: 100%;
     font-size: 16px;
     line-height: 200%;
-    transition: all 2s;
+    transition: all .5s;
   }
 
 
