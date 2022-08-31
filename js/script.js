@@ -1,5 +1,8 @@
 var prevScrollpos = window.pageYOffset;
 let Wh = window.innerHeight;
+let G_slideIndex = 1;
+
+let l_slideIndex = 1;
 
 
 
@@ -255,7 +258,6 @@ function showSlides(n) {
 
 
 
-let l_slideIndex = 1;
 l_showSlides(l_slideIndex);
 
 function l_plusSlides(n) {
@@ -275,6 +277,36 @@ function l_showSlides(n) {
     slides[i].style.display = "none";  
   }
   slides[l_slideIndex-1].style.display = "block";  
+}
+
+
+
+
+
+
+//  ---------------------------  GIF SLIDER --------------------------
+
+
+
+GshowSlides(G_slideIndex);
+
+function GplusSlides(n) {
+  GshowSlides(G_slideIndex += n);
+}
+
+function GcurrentSlide(n) {
+  GshowSlides(G_slideIndex = n);
+}
+
+function GshowSlides(n) {
+  let i;
+  let gslides = document.getElementsByClassName("SS-SL");
+  if (n > gslides.length) {G_slideIndex = 1}    
+  if (n < 1) {G_slideIndex = gslides.length}
+  for (i = 0; i < gslides.length; i++) {
+    gslides[i].style.display = "none";  
+  }
+  gslides[G_slideIndex-1].style.display = "block";  
 }
 
 
