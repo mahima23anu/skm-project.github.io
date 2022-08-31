@@ -179,35 +179,6 @@ section {
 
 
 
-.btn:hover span {
-    color: #000;
-}
-
-
-
-
-
-
-.btn .hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: -1;
-    transform: translateY(100%);
-    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-
-
-
-
-.btn:hover .hover {
-    transform: translateY(0);
-}
-
 
 
 
@@ -314,6 +285,27 @@ footer ul li a:hover
 }
 
 
+.SS_01{
+    background-image: url(../img/star-ship/SS_001.webp);
+}
+
+.SS_02{
+    height: 340px;
+    padding: 20px;
+    font-weight: lighter;
+    text-transform: none;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.SS_02 div {
+    width: 40%;
+}
+
+
+
 .Take-Off{
     background-image: url(../img/f9-cov-11.webp);
 }
@@ -371,6 +363,179 @@ footer ul li a:hover
 #FH_c_11{
     background-image: url(../img/falcon-heavy/FH_C_11.webp);
 }
+
+
+#DR_02{
+    background-image: url(../img/dragon/DR_002.webp);
+}
+
+#DR_03{
+    background-image: url(../img/dragon/DR_003.webp);
+}
+
+#SS_04{
+    background-image: url(../img/star-ship/SS_003.webp);
+}
+
+#SS_05{
+    background-image: url(../img/star-ship/SS_004.webp);
+}
+#SS_06{
+    background-image: url(../img/star-ship/SS_005.webp);
+}
+.SS_07{
+    background-image: url(../img/star-ship/SS_006.webp);
+    position: relative;
+}
+
+.DR_05{
+    background-image: url(../img/dragon/DR_005.webp);
+    position: relative;
+}
+
+
+.SS_08{
+    background-image: url(../img/star-ship/SS_010.webp);
+    position: relative;
+}
+
+
+.upper-sec-div{
+    text-transform: none;
+    line-height: 150%;
+    word-spacing: 3px;
+}
+
+.parent-div {
+    position: absolute;
+    width: 35%;
+    right: 100px;
+    top: 13%;
+    justify-content: right;
+}
+
+.lower-sec-div{
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 80;
+    text-transform: none;
+    line-height: 150%;
+    word-spacing: 3px;
+}
+
+
+.DR_05 h1{
+    width: 90%;
+    font-size: 46px;
+    line-height: 100%;
+}
+
+.SS_08 h1{
+    width: 90%;
+    font-size: 46px;
+    line-height: 100%;
+}
+
+
+.DR_06{
+    background-image: url("../img/dragon/DR_006.webp");
+    overflow: hidden;
+}
+
+
+
+.SS_09{
+    background-image: url("../img/star-ship/SS_011.webp");
+    overflow: hidden;
+}
+
+
+#Font-heading{
+    line-height: normal;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+
+.DR_04{
+    background-image: url(../img/dragon/DR_004.webp);
+    position: relative;
+}
+
+.DR_04 div{
+    left: 6%;
+    position: absolute;
+    bottom: 15%;
+    font-size: 48px;
+}
+
+.DR_04 div p{
+    font-size: 20px;
+}
+
+
+.SS_07 div{
+    left: 6%;
+    position: absolute;
+    bottom: 15%;
+    font-size: 48px;
+}
+
+.SS_07 div p{
+    font-size: 20px;
+}
+
+
+
+
+.left-aligned-div div{
+    margin-top: 0%;
+    margin-left: 10%;
+}
+
+.left-aligned-div div h1{
+    font-size: 48px;
+}
+
+
+
+.left-aligned-div div p{
+    text-transform: none;
+    font-weight: lighter;
+    line-height: 140%;
+}
+
+.left-aligned-div{
+    top: 50%;
+    width: 40%;
+    margin-top: 20%;
+}
+
+.right-aligned-div{
+    overflow: hidden;
+    position: relative;
+    padding-left: 50px;
+    width: 60%;
+    height: 100%;
+}
+
+
+#Flex-box-3{
+    padding-left: 5%;
+    padding-top: 1%;
+
+    display: flex;
+    flex-direction: row;
+    height: 140vh;
+    justify-content: space-evenly;
+    padding-bottom: 0%;
+}
+
+.left-aligned-div div a div{
+    margin-top: auto;
+    margin-left: auto;
+}
+
 
 .FH_c_8{
     background-image: url(../img/falcon-heavy/FH_C_8.webp);
@@ -448,6 +613,13 @@ footer ul li a:hover
 
 .bg-img-f9-bp{
     background-image: url(../img/F9-bp.webp);
+    transition: all;
+    animation-fill-mode: both;
+    
+}
+
+.SS_03{
+    background-image: url(../img/star-ship/SS_002.webp);
     transition: all;
     animation-fill-mode: both;
     
@@ -691,6 +863,97 @@ footer ul li a:hover
     transition: all;
   }
 
+
+  .Slider-Text-2 {
+    top: 10%;
+    left: 5%;
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    width: 40%;
+    text-align: left;
+    transition: all;
+  }
+
+
+  .Slider-Text-2 span{
+    color: rgb(128, 128, 128);
+  }
+
+
+
+  .Slider-Text-2 h3{
+    font-size: 50px;
+  }
+  
+  .Slider-Text-2 td{
+    border-bottom-color: rgb(128, 128, 128);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+  }
+
+  .Slider-Text-2 table{
+    width: 100%;
+    text-align: left;
+    transition: all;
+  }
+  .Slider-Text-2 td{
+    padding: 20px 0px;
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all;
+  }
+
+
+  .Slider-Text-3 {
+    text-transform: none;
+    top: 20%;
+    left: 5%;
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    width: 40%;
+    text-align: left;
+    transition: all;
+  }
+
+
+
+
+  .Slider-Text-3 h3{
+    font-size: 50px;
+  }
+
+  .Slider-Text-3 p{
+    font-weight: lighter;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+  }
+  
+  .Slider-Text-3 td{
+    border-bottom-color: rgb(128, 128, 128);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+  }
+
+  .Slider-Text-3 table{
+    width: 100%;
+    text-align: left;
+    transition: all;
+  }
+  .Slider-Text-3 td{
+    padding: 20px 0px;
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all;
+  }
+
+
+
   #td-right{
     text-align: right;
     text-transform: lowercase;
@@ -720,6 +983,49 @@ footer ul li a:hover
     background-size: cover;
     overflow: hidden;
   }
+
+
+  .SS-SL{
+    display: flex;
+    margin-top: -5%;
+    width: 100%;
+    height: 100vh;
+    transition: all;
+    overflow-x: hidden;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  #SS-SL-01{
+    background-image: url(../img/star-ship/SS_007.gif);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  #SS-SL-02{
+    background-image: url(../img/star-ship/SS_008.gif);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+
+  #SS-SL-03{
+    background-image: url(../img/star-ship/SS_009.gif);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+
+  #SS-SL-04{
+    background-image: url(../img/star-ship/SS_01.gif);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
 
 
   .lower_text p{
@@ -786,6 +1092,7 @@ footer ul li a:hover
 
 
   #play-btn{
+    position: absolute;
         max-width: fit-content;
         color: #000;
         position: absolute;
@@ -795,17 +1102,41 @@ footer ul li a:hover
         height: 4%;
         overflow: hidden;
         cursor: pointer;
+        /* transform: translate(-50%,-50%); */
   }
+
+
+  #play-btn-2{
+    position: absolute;
+    max-width: fit-content;
+    color: #000;
+    position: absolute;
+    top: 35%;
+    left: 47%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+        /* transform: translate(-50%,-50%); */
+  }
+
+
 
   #play-btn:hover {
     animation-name: play-spin;
-    animation-duration: .5s;
+    animation-duration: .8s;
+    animation-fill-mode: both;
+  }
+
+  #play-btn-2:hover {
+    animation-name: play-spin;
+    animation-duration: .8s;
     animation-fill-mode: both;
   }
 
   @keyframes play-spin {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    from {transform: scale(1);}
+    to {transform: scale(1.3);}
   }
 
   @keyframes fade {
@@ -1149,5 +1480,45 @@ footer ul li a:hover
     
     
 } 
+
+#DR_C{
+    background-image: url("../img/dragon/dragon.webp");
+    background-size: cover;
+}
+
+.DR_01{
+    background-image: url("../img/dragon/DR_001.webp");
+    background-size: cover;
+}
+
+
+.btn:hover span {
+    color: #000;
+}
+
+
+
+
+
+
+.btn .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+
+
+
+.btn:hover .hover {
+    transform: translateY(0);
+}
 
 /*  satvik  */

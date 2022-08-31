@@ -176,6 +176,38 @@
         overflow: hidden;
     }
 
+    .SS-SL{
+        margin-left: -120%;
+        width: 300%;
+        height: 94vh;
+        overflow: hidden;
+    }
+
+    #SS-SL-01{
+        background-size: 70%;
+        background-position: 40% 10%;
+    }
+
+    #SS-SL-02{
+        background-size: 70%;
+        background-position: 40% 10%;
+    }
+
+    #SS-SL-03{
+        background-size: 70%;
+        background-position: 47% 10%;
+    }
+
+
+    #SS-SL-04{
+        background-size: 70%;
+        background-position: 30% 10%;
+    }
+
+    .SS_02{
+        height: 190px; 
+    }
+
     .lower_text{
         font-size: 12px;
         width: 90%;
@@ -347,5 +379,94 @@
     {
         font-size: 35px;
     }
+
+    .upper-sec-div{
+        text-transform: none;
+        line-height: 150%;
+        word-spacing: 3px;
+    }
+    
+    .parent-div {
+        position: absolute;
+        width: auto;
+        right: 1px;
+        left: 1px;
+        top: 20px;
+        justify-content: right;
+        background-color: rgba(0, 0, 0,.5);
+        overflow: visible;
+        max-height: fit-content;
+        padding: 20px;
+        padding-bottom: 110%;
+    }
+    
+    .lower-sec-div{
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 80;
+        text-transform: none;
+        line-height: 150%;
+        word-spacing: 3px;
+    }
+
+    .Slider-Text-2 {
+        left: 0;
+        margin-left: auto;
+        padding-top: 10vh;
+        padding-bottom: 80vh;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, .5);
+        margin-top: -10vh;
+        line-height: 100%;
+    }
+    .Slider-Text-2 table{
+        padding: 10px;
+        width: 100%;
+    }
+
+    .Slider-Text-2 p{
+        line-height: 150%;
+        width: 90%;
+       
+    }
+
+    .Slider-Text-2 h3{
+        font-size: 30px;
+    }
+
+
+
+
+    .Slider-Text-3 {
+        left: 0;
+        margin-left: auto;
+        padding-top: 10vh;
+        padding-bottom: 80vh;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+        font-size: 16px;
+        margin-top: -10vh;
+        line-height: 100%;
+    }
+    .Slider-Text-3 table{
+        padding: 10px;
+        width: 100%;
+    }
+
+    .Slider-Text-3 p{
+        line-height: 150%;
+        width: 90%;
+       
+    }
+
+    .Slider-Text-3 h3{
+        line-height: 100%;
+        font-size: 40px;
+    }
+
 
 }
