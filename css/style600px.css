@@ -375,6 +375,10 @@
         margin-top: -20px;
         margin-left: -80px;
     }
+    .edit-title
+    {
+        font-size: 35px;
+    }
 
     .upper-sec-div{
         text-transform: none;
